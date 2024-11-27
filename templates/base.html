@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <title>{% block title %}{% endblock %}</title>
+    <style>
+        h1 {
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            color: #fa0808;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+
+{% include "includes/header.html" %}
+
+{% block content %}
+
+{% endblock content %}
+
+{% include "includes/footer.html" %}
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+
+{% block title %}
+Solicitud Empleo - VeciFarma
+{% endblock %}
+
+{% block content %}
+
+<div class="container-fluid d-flex justify-content-center align-items-center vh-100 bg-light">
+    <div class="form-container bg-white p-5 rounded shadow-sm" style="max-width: 700px; width: 100%;">
+        <h2 class="mb-4 text-center text-success">Solicitud de Empleo - Repartidor</h2>
+        <form action="#" method="POST" enctype="multipart/form-data">
+            <div class="row">
+                <!-- Información personal -->
+                <div class="col-md-6">
+                    <div class="form-group mb-3">
+                        <label for="rut" class="form-label">Rut:</label>
+                        <input type="text" class="form-control" id="rut" name="rut" placeholder="Ej: 12345678-9" required>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group mb-3">
+                        <label for="nombre" class="form-label">Nombre:</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group mb-3">
+                        <label for="apellido_p" class="form-label">Apellido Paterno:</label>
+                        <input type="text" class="form-control" id="apellido_p" name="apellido_p" placeholder="Ingresa tu apellido" required>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group mb-3">
+                        <label for="apellido_m" class="form-label">Apellido Materno:</label>
+                        <input type="text" class="form-control" id="apellido_m" name="apellido_m" placeholder="Ingresa tu apellido" required>
+                    </div>
+                </div>
+
+                <!-- Información de contacto -->
+                <div class="col-md-6">
+                    <div class="form-group mb-3">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="correo@ejemplo.com" required>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group mb-3">
+                        <label for="telefono" class="form-label">Teléfono:</label>
+                        <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Ej: +56912345678" required>
+                    </div>
+                </div>
+
+                <!-- Fecha de nacimiento -->
+                <div class="col-md-6">
+                    <div class="form-group mb-3">
+                        <label for="fecha_nacimiento" class="form-label">Fecha de Nacimiento:</label>
+                        <input type="date" class="form-control" id="fecha_nacimiento" name="fecha_nacimiento" required>
+                    </div>
+                </div>
+
+                <!-- Dirección -->
+                <div class="col-md-6">
+                    <div class="form-group mb-3">
+                        <label for="direccion" class="form-label">Dirección:</label>
+                        <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Ingresa tu dirección" required>
+                    </div>
+                </div>
+
+                <!-- Cargar CV -->
+                <div class="col-md-12">
+                    <div class="form-group mb-4">
+                        <label for="cv" class="form-label">Subir Currículum Vitae (PDF):</label>
+                        <input type="file" class="form-control" id="cv" name="cv" accept=".pdf" required>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botón de envío -->
+            <button type="submit" class="btn btn-success btn-block">Enviar Solicitud</button>
+
+            <!-- Enlace para regresar -->
+            <p class="text-center mt-3">¿Ya enviaste tu solicitud? <a href={% url "home" %} class="text-success">Volver al inicio</a></p>
+        </form>
+    </div>
+</div>
+
+
+{% endblock %}

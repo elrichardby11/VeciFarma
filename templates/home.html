@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+
+{% block title %}
+Inicio - VeciFarma
+{% endblock %}
+
+{% block content %}
+
+<!-- Header -->
+<header class="bg-white text-center py-4 border-bottom">
+    <h1>Vecifarma</h1>
+    <img src="logo.jpg" alt="Logo de Vecifarma" class="logo img-fluid" style="max-width: 150px;">
+</header>
+
+<!-- Bienvenida -->
+<div class="container my-5 p-4 bg-white shadow-sm rounded">
+    <h2 class="text-success">Bienvenido a Vecifarma</h2>
+    <p>Vecifarma es una plataforma que combina la entrega de medicamentos a domicilio con la creación de empleo local, ayudando a la comunidad a acceder a la salud y generando oportunidades laborales.</p>
+</div>
+
+<!-- ¿Cómo funciona? -->
+<div class="container">
+    <div class="row text-center">
+        <div class="col-md-4">
+            <img src="farmacia.png" alt="Farmacias" class="img-fluid rounded mb-3" style="width: 150px; height: 150px; object-fit: cover;">
+            <h5>Elige tu farmacia</h5>
+            <p>Accede a farmacias cercanas desde la app y selecciona tus productos.</p>
+        </div>
+        <div class="col-md-4">
+            <img src="images.jpg" alt="Repartidor" class="img-fluid rounded mb-3" style="width: 170px; height: 160px; object-fit: cover;">
+            <h5>Repartidores locales</h5>
+            <p>Vecinos capacitados entregan tus pedidos de manera rápida y segura.</p>
+        </div>
+        <div class="col-md-4">
+            <img src="puerta.jpg" alt="Entrega a domicilio" class="img-fluid rounded mb-3" style="width: 160px; height: 150px; object-fit: cover;">
+            <h5>Recibe tu pedido</h5>
+            <p>Recibe tus medicamentos en la puerta de tu casa al menor costo.</p>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
