@@ -7,13 +7,45 @@ Descargar - VeciFarma
 {% block content %}
 
 <div class="container my-5">
-    <h2 class="text-success">Obtén la App de Vecifarma</h2>
-    <p>Descarga la app de Vecifarma y comienza a disfrutar de los beneficios de la entrega de medicamentos a domicilio y las oportunidades laborales en tu comunidad.</p>
+    <div class="text-center">
+        <h2 class="text-success font-weight-bold mb-4">Descarga la App de VeciFarma</h2>
+        <p class="lead text-muted">
+            Simplifica tu vida con VeciFarma. Recibe tus medicamentos a domicilio y aprovecha 
+            oportunidades laborales en tu comunidad. ¡Todo desde una sola app!
+        </p>
+    </div>
 
-    <div class="mt-4">
-        <a href="#" class="btn btn-success btn-lg mr-2">Descargar para Android</a>
-        <a href="#" class="btn btn-success btn-lg">Descargar para iOS</a>
+    <div class="row justify-content-center mt-5">
+        <div class="col-md-4 col-sm-6 mb-3 text-center">
+            <a href="#" class="btn btn-success btn-lg w-100">
+                <i class="fab fa-android mr-2"></i> Descargar para Android
+            </a>
+        </div>
+        <div class="col-md-4 col-sm-6 mb-3 text-center">
+            <a href="#" class="btn btn-success btn-lg w-100">
+                <i class="fab fa-apple mr-2"></i> Descargar para iOS
+            </a>
+        </div>
     </div>
 </div>
+
+<!-- Botón flotante de WhatsApp -->
+<a 
+    href="https://wa.me/56912345678" 
+    target="_blank" 
+    class="btn btn-success rounded-circle shadow-lg position-fixed" 
+    style="
+        bottom: 20px; 
+        right: 20px; 
+        width: 60px; 
+        height: 60px; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        font-size: 24px;
+        z-index: 1000;">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
 
 {% endblock %}
